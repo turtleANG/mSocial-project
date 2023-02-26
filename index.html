@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style/style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+  <title>OLTERMANNI</title>
+</head>
+
+<body>
+  <header class="header">
+    <div class="flex__container">
+      <div class="header__logo">
+        <img src="./assets/images/logo.svg" alt="logo" class="img-fluid">
+      </div>
+      <div class="header__nav">
+        <div class="nav__head">
+          <div class="nav__icon nav__icon-active">
+            <img src="./assets/images/menu-icon.svg" alt="menu icon">
+          </div>
+          <div class="nav__close">
+            <img src="./assets/images/close-icon.svg" alt="menu icon">
+          </div>
+          <div class="nav__logo">
+            <img src="./assets/images/logo.svg" alt="logo" class="img-fluid">
+          </div>
+        </div>
+        <nav class="nav__menu">
+          <ul class="nav__list">
+            <li class="nav__item"><a href="#prize">Правила</a></li>
+            <li class="nav__item"><a href="#footer">Призы</a></li>
+            <li class="nav__item"><a href="#footer">Победители</a></li>
+          </ul>
+          <div class="additional-menu">
+            <hr>
+            <ul class="nav__list">
+              <li class="nav__item"><a href="#footer">Обратная связь</a></li>
+              <li class="nav__item"><a href="#prize">Правила акции</a></li>
+              <li class="nav__item"><a href="#footer">FAQ</a></li>
+            </ul>
+            <hr>
+            <div class="social">
+              <p class="social__title">Присоединяйтесь к нам</p>
+              <div class="social__list">
+                <div class="social__item">
+                  <a href="#">
+                    <img src="./assets/images/fb-icon.svg" alt="fb">
+                  </a>
+                </div>
+                <div class="social__item">
+                  <a href="#">
+                    <img src="./assets/images/vk-icon.svg" alt="vk">
+                  </a>
+                </div>
+                <div class="social__item">
+                  <a href="#">
+                    <img src="./assets/images/in-icon.svg" alt="in">
+                  </a>
+                </div>
+                <div class="social__item">
+                  <a href="#">
+                    <img src="./assets/images/twitter-icon.svg" alt="twitter">
+                  </a>
+                </div>
+                <div class="social__item">
+                  <a href="#">
+                    <img src="./assets/images/inst-icon.svg" alt="inst">
+                  </a>
+                </div>
+                <div class="social__item">
+                  <a href="#">
+                    <img src="./assets/images/pinterest-icon.svg" alt="pinterest">
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+      <div class="header__author">
+        <div class="author__login"><a href="#" class="js-open-modal" data-modal="enter">Вход</a></div>
+        <div class="author__registration"><a href="#" class="js-open-modal" data-modal="reg">Регистрация</a></div>
+
+        <div class="modal" data-modal="enter">
+          <svg class="modal__cross js-modal-close" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path
+              d="M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z" />
+          </svg>
+          <p class="modal__title">Вход</p>
+          <button class="btn__close js-modal-close">Закрыть</button>
+        </div>
+
+        <div class="modal" data-modal="reg">
+          <svg class="modal__cross js-modal-close" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path
+              d="M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z" />
+          </svg>
+          <p class="modal__title">Регистрация</p>
+          <button class="btn__close js-modal-close">Закрыть</button>
+        </div>
+
+        <div class="overlay js-overlay-modal"></div>
+
+      </div>
+    </div>
+  </header>
+  <section class="jumbotron">
+    <img src="./assets/images/banner.png" alt="banner" class="img-fluid">
+  </section>
+  <section class="prize">
+    <div class="container">
+      <button class="btn">Загрузить чек</button>
+      <h2 class="prize__title" id="prize">Нам 40 лет — вам подарки</h2>
+      <div class="prize__rules">
+        <div class="rules__item">
+          <img src="./assets/images/basket-icon.svg" alt="" class="item__image">
+          <p class="item__description">Покупайте сыр Oltermanni</p>
+        </div>
+        <div class="separating__item"></div>
+        <div class="rules__item">
+          <img src="./assets/images/desctop-icon.svg" alt="" class="item__image">
+          <p class="item__description">Регистрируйте чеки<br>на сайте в период<br>с 1 сентября по 30 ноября<br>2020 года
+          </p>
+        </div>
+        <div class="separating__item"></div>
+        <div class="rules__item">
+          <img src="./assets/images/phone-icon.svg" alt="" class="item__image">
+          <p class="item__description">Получайте гарантированные призы — деньги на телефон</p>
+        </div>
+        <div class="separating__item"></div>
+        <div class="rules__item">
+          <img src="./assets/images/raffle-icon.svg" alt="" class="item__image">
+          <p class="item__description">Участвуйте в еженедельных розыгрышах</p>
+        </div>
+        <div class="separating__item"></div>
+        <div class="rules__item">
+          <img src="./assets/images/ticket-icon.svg" alt="" class="item__image">
+          <p class="item__description">Получите возможность<br>выиграть 400 000 ₽<br>на новый интерьер</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="action" id="action">
+    <div class="container">
+      <h2 class="action__title">В акции участвуют</h2>
+      <div class="action__list swiper-container">
+        <div class="swiper-wrapper">
+          <div class="list__item swiper-slide">
+            <img src="./assets/images/item_1.png" alt="product" class="img-fluid">
+            <p class="item__title">
+              Лёгкий, брусок<br>
+              180 г
+            </p>
+          </div>
+          <div class="list__item swiper-slide">
+            <img src="./assets/images/item_2.png" alt="product" class="img-fluid">
+            <p class="item__title">
+              Лёгкий, слайсы<br>
+              120, 225 г
+            </p>
+          </div>
+          <div class="list__item swiper-slide">
+            <img src="./assets/images/item_3.png" alt="product" class="img-fluid">
+            <p class="item__title">
+              Сливочный, брусок<br>
+              200, 300 г
+            </p>
+          </div>
+          <div class="list__item swiper-slide">
+            <img src="./assets/images/item_4.png" alt="product" class="img-fluid">
+            <p class="item__title">
+              Сливочный, слайсы<br>
+              130, 250 г
+            </p>
+          </div>
+        </div>
+
+        <div class="swiper-pagination"></div>
+
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+    </div>
+  </section>
+  <footer class="footer" id="footer">
+    <div class="flex__container">
+      <div class="footer__info">
+        Информационная линия<br>
+        <span class="info__phone">8 800 333-15-25</span>
+      </div>
+      <div class="footer__menu">
+        <ul class="menu__list">
+          <li class="menu__item">
+            <a href="#">Обратная связь</a>
+          </li>
+          <li class="menu__item">
+            <a href="#">Правила акции</a>
+          </li>
+          <li class="menu__item">
+            <a href="#">FAQ</a>
+          </li>
+        </ul>
+      </div>
+      <div class="social">
+        <p class="social__title">Присоединяйтесь к нам</p>
+        <div class="social__list">
+          <div class="social__item">
+            <a href="#">
+              <img src="./assets/images/fb-icon.svg" alt="fb">
+            </a>
+          </div>
+          <div class="social__item">
+            <a href="#">
+              <img src="./assets/images/vk-icon.svg" alt="vk">
+            </a>
+          </div>
+          <div class="social__item">
+            <a href="#">
+              <img src="./assets/images/in-icon.svg" alt="in">
+            </a>
+          </div>
+          <div class="social__item">
+            <a href="#">
+              <img src="./assets/images/twitter-icon.svg" alt="twitter">
+            </a>
+          </div>
+          <div class="social__item">
+            <a href="#">
+              <img src="./assets/images/inst-icon.svg" alt="inst">
+            </a>
+          </div>
+          <div class="social__item">
+            <a href="#">
+              <img src="./assets/images/pinterest-icon.svg" alt="pinterest">
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="footer__copyright">
+        &copy; 2020 ООО «Валио»
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  <script src="./script/main.js"></script>
+</body>
+
+</html>
